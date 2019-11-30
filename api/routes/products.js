@@ -13,4 +13,29 @@ const router = express.Router();
         });
     });
 
+    router.get('/:productId', (req, res, next) => {
+       const id = req.params.productId;
+       if(id === 'special'){
+           res.status(200).json({
+               message: 'You discovered the special ID'
+           });
+       } else {
+           res.status(200).json({
+               message: 'You passed an ID'
+           });
+       }
+    });
+
+    router.patch('/:productId', (req, res, next) => {
+       res.status(200).json({
+           message: 'Updated product!'
+       })
+    });
+
+    router.delete('/:productId', (req, res, next) => {
+    res.status(200).json({
+        message: 'DELITED product!'
+    })
+});
+
     module.exports = router;
