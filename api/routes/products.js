@@ -8,7 +8,7 @@ const router = express.Router();
     });
 
     router.post('/', (req, res, next) => {
-        res.status(200).json({
+        res.status(201).json({
             message: 'Handling POST request to /products'
         });
     });
