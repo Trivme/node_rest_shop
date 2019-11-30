@@ -1,0 +1,19 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadim",
+  "license": "ISC",
+  "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
