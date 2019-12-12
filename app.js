@@ -7,10 +7,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
-mongoose.connect('mongodb+srv://vadivlkv: ' + process.env.MONGO_ATLAS_PW + '@node-rest-shop-d0pjv.gcp.mongodb.net/test?retryWrites=true&w=majority',
-    {
-        useMongoClient: true
-    }
+mongoose.connect('mongodb+srv://vadivlkv: ' + process.env.MONGO_ATLAS_PW + '@node-rest-shop-d0pjv.gcp.mongodb.net/test?retryWrites=true&w=majority'
 );
 
 app.use(morgan('dev'));
